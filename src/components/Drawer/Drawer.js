@@ -1,6 +1,6 @@
 import classes from "./Drawer.module.css"
 
-const drawer = () => {
+const Drawer = () => {
     return (
         <div className = {classes.Drawer}>
     Drawer

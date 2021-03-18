@@ -1,4 +1,3 @@
-  
 .Drawer .content {
     background-color: tomato;
     width: 250px;
@@ -15,3 +14,10 @@
   .closed {
     transform: translateX(-260px);
   }
+  
+  @media (min-width: 550px) {
+    .Drawer {
+      display: none;
+    }
+  }
+  

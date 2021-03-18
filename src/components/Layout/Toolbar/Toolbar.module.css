@@ -1,16 +1,15 @@
-.Toolbar{
+.Toolbar {
     display: flex;
     justify-content: space-between;
-    background-color: red;
-    font-size: 20px;
+    
     color: white;
-    padding: 15px;
+    background-color: tomato;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+  }
 
-}
 .Toolbar img {
     height: 70px;
 }

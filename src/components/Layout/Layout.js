@@ -1,17 +1,19 @@
-import classes from "./Layout.module.css"
-import Drawer from "./Drawer/Drawer.js";
-import Toolbar from "./Toolbar/Toolbar.js";
 
+import classes from "./Layout.module.css";
+import Toolbar from "./Toolbar/Toolbar";
+import Drawer from "./Drawer/Drawer";
+import { useState } from "react";
 
-const Layout = ({children}) => {
-    return ( 
-        <div className={classes.Layout}>
-        <Toolbar/>
-        <Drawer/>
-       
-        {children}
-        </div>
-     );
+const Layout = ({ children }) => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  return (
+    <div className={classes.Layout}>
+      <Toolbar openDrawer={() => setDrawerOpen(true)} />
+      <Drawer open={drawerOpen} closeDrawer={() => setDrawerOpen(false)} />
+      {children}
+    </div>
+  );
 }
  
 export default Layout;

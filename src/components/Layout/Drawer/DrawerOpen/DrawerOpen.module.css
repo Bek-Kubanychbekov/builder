@@ -1,10 +1,11 @@
 .DrawerOpen {
   height: 3rem;
-  padding: 1rem;
+  padding: .5rem;
+  margin: .5rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin-right: .5rem;
+  cursor: pointer;
 }
 .DrawerOpen > div {
   height: 3px;

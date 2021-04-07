@@ -6,15 +6,19 @@ const PizzaControls = ({
   ingredients,
   addIngredient,
   removeIngredient,
-  canBuy,
-  setIsBuying
+  startOrdering
 }) => {
   const results = [];
+  let total = 0;
   for (const ingredient in ingredients) {
+    // Add ingredient number to totals number
+    total += ingredients[ingredient];
+    // Render pizza control for this ingredient
     results.push(<PizzaControl
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}
+        count={ingredients[ingredient]}
         type={ingredient} />)
   }
 
@@ -22,11 +26,7 @@ const PizzaControls = ({
     <div className={classes.PizzaControls}>
       <strong>Ingredients</strong>
       {results}
-      <Button
-        onClick={() => setIsBuying(true)}
-        disabled={!canBuy}>
-          Order
-      </Button>
+      <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
   );
 }

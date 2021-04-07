@@ -1,3 +1,9 @@
-body{
-    font-family: 'Lobster', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+  font-family: 'Architects Daughter', cursive;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
 }

@@ -6,6 +6,7 @@ import { useState } from "react";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
 
+
 const PizzaBuilder = () => {
   const prices = {
     tomato: 3.5,

@@ -8,12 +8,12 @@ import Modal from "../UI/Modal/Modal";
 
 const PizzaBuilder = () => {
   const prices = {
-    tomato: 3.5,
-    salad: 4,
-    greenOlive: .3,
+    tomato: .90 ,
+    salami: .70,
+    greenOlive: .5,
     blackOlive: 2,
-    redPepper: 2,
-    yellowPepper: 1,
+    redPepper: .7,
+    yellowPepper: .90,
   };
   const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);

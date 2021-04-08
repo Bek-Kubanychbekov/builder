@@ -1,7 +1,7 @@
 import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
 
 import classes from "./PizzaPreview.module.css";
-import ingredientsBackground from "../../../images/cheese.svg";
+import ingredientsBackground from "../../../images/tomato.svg";
 
 const PizzaPreview = ({ ingredients, price }) => {
   const result = [];
@@ -20,7 +20,8 @@ const PizzaPreview = ({ ingredients, price }) => {
           {result}
         </div>
       </div>
-      <div className={classes.price}>{price.toFixed(1)} som</div>
+      <div className={classes.price}>Price : {price.toFixed(1)} som</div>
+      
     </div>
   );
 }

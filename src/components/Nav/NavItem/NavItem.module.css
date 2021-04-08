@@ -1,0 +1,6 @@
+.NavItem a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .6rem ;
+}

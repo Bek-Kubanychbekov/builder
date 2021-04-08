@@ -11,7 +11,7 @@
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 100%;
-  background-color: #fcc067;
+  background-color: #f5ca8b;
 
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@
   position: relative;
 }
 .price {
-  background-color: tomato;
+  background-color:  rgb(226, 123, 5);;
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;

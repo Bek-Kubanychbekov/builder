@@ -9,7 +9,7 @@ import Modal from "../UI/Modal/Modal";
 const PizzaBuilder = () => {
   const prices = {
     tomato: 3.5,
-    salami: 4,
+    salad: 4,
     greenOlive: .3,
     blackOlive: 2,
     redPepper: 2,

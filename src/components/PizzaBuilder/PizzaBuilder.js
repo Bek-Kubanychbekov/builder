@@ -19,8 +19,9 @@ const PizzaBuilder = () => {
   const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
 
-  useEffect(() => 
-     axios.get('https://builder-8df5b-default-rtdb.firebaseio.com/default.json')
+  useEffect(
+    () => axios
+      .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
 

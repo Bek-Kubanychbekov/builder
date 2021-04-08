@@ -2,5 +2,16 @@
     display: block;
     color: white;
     text-decoration: none;
-    padding: .6rem ;
+    padding: .6rem 1rem .4rem;
+    border-bottom: 5px solid transparent;
+    transition: all .2s ease-in;
+}
+.NavItem a:hover{
+    border-color: white;
+    border-color: rgb(248, 68, 36);
+}
+.NavItem a:active,
+.NavItem a.active{
+    border-color: white;
+    
 }

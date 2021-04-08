@@ -1,10 +1,10 @@
 import PizzaPreview from "./PizzaPreview/PizzaPreview";
 import PizzaControls from "./PizzaControls/PizzaControls";
-import classes from "./PizzaBuilder.module.css";
-import { useState } from "react";
-import OrderSummary from "./OrderSummary/OrderSummary";
-import Modal from "../UI/Modal/Modal";
 
+import classes from "./PizzaBuilder.module.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Modal from "../UI/Modal/Modal";
 
 const PizzaBuilder = () => {
   const prices = {
@@ -15,29 +15,25 @@ const PizzaBuilder = () => {
     redPepper: 2,
     yellowPepper: 1,
   };
+  const [ingredients, setIngredients] = useState({});
+  const [price, setPrice] = useState(0);
+  const [ordering, setOrdering] = useState(false);
 
-  const [ingredients, setIngredients] = useState({
-    tomato: 1,
-    salami: 1,
-    greenOlive: 1,
-    blackOlive: 1,
-    redPepper: 1,
-    yellowPepper: 1,
-  });
-  const [price, setPrice] = useState(150);
-  const [canBuy, setCanBuy] = useState(true);
-  const [isBuying, setIsBuying] = useState(false);
+  useEffect(() => 
+     axios.get('https://builder-8df5b-default-rtdb.firebaseio.com/default.json')
+      .then(response => {
+        setPrice(response.data.price);
 
-  function checkCanBuy(newIngredients) {
-    const totalIngredients = Object.values(newIngredients)
-      .reduce((total, current) => total + current);
-    setCanBuy(totalIngredients > 0);
-  }
+        // For arrays
+        // setIngredients(Object.values(response.data.ingredients));
+        // For objects
+        setIngredients(response.data.ingredients);
+      }), []
+  );
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
-    checkCanBuy(newIngredients);
     setPrice(price + prices[type]);
     setIngredients(newIngredients);
   }
@@ -46,28 +42,33 @@ const PizzaBuilder = () => {
     if (ingredients[type]) {
       const newIngredients = { ...ingredients };
       newIngredients[type]--;
-      checkCanBuy(newIngredients);
       setPrice(price - prices[type]);
       setIngredients(newIngredients);
     }
   }
 
+  function startOrdering() {
+    setOrdering(true);
+  }
+
+  function stopOrdering() {
+    setOrdering(false);
+  }
+
   return (
     <div className={classes.PizzaBuilder}>
-      <Modal show={isBuying} cancelCallback={() => setIsBuying(false)}>
-        <OrderSummary ingredients={ingredients} price={price} />
-      </Modal>
-
       <PizzaPreview
         ingredients={ingredients}
         price={price} />
       <PizzaControls
-        canBuy={canBuy}
-        setIsBuying={setIsBuying}
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}
+        startOrdering={startOrdering}
         />
+      <Modal
+        show={ordering}
+        cancel={stopOrdering}>Hello</Modal>
     </div>
   );
 }

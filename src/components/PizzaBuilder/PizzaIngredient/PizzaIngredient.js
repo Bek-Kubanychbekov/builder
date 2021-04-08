@@ -1,10 +1,10 @@
 import React from "react";
 
 import classes from "./PizzaIngredient.module.css";
-import salamiBackground from "../../../images/salami.svg";
+import salamiBackground from "../../../images/salad.svg";
 import tomatoBackground from "../../../images/tomato.svg";
-import blackOliveBackground from "../../../images/blackOlive.svg";
-import greenOliveBackground from "../../../images/greenOlive.svg";
+import blackOliveBackground from "../../../images/meat.svg";
+import greenOliveBackground from "../../../images/cucumber.svg";
 import redPepperBackground from "../../../images/redPepper.svg";
 import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
@@ -12,7 +12,7 @@ const PizzaIngredient = ({ type, fixed }) => {
   const types = {
     salami: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
     tomato: { backgroundImage: `url(${tomatoBackground})`, width: "35px", height: "35px" },
-    blackOlive: { backgroundImage: `url(${blackOliveBackground})`, width: "10px", height: "10px" },
+    blackOlive: { backgroundImage: `url(${blackOliveBackground})`, width: "30px", height: "30px" },
     greenOlive: { backgroundImage: `url(${greenOliveBackground})`, width: "10px", height: "10px" },
     redPepper: { backgroundImage: `url(${redPepperBackground})`, width: "20px", height: "20px" },
     yellowPepper: { backgroundImage: `url(${yellowPepperBackground})`, width: "40px", height: "40px" },

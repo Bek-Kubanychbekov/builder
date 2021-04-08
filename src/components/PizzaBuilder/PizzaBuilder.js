@@ -11,7 +11,7 @@ const PizzaBuilder = () => {
     tomato: 3.5,
     salami: 4,
     greenOlive: .3,
-    blackOlive: .3,
+    blackOlive: 2,
     redPepper: 2,
     yellowPepper: 1,
   };

@@ -7,7 +7,7 @@ const PizzaControl = ({ type, add, remove, count }) => {
     tomato: "Cucumber" ,
     salami: "Salad",
     greenOlive: "Fries",
-    blackOlive: "Meat",
+    blackOlive: "Mead",
     redPepper: "Ketchup",
     yellowPepper: "Tomato",
   }

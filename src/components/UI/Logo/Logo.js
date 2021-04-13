@@ -1,11 +1,11 @@
 import classes from "./Logo.module.css"
-import logo from "../../../images/shawarma.svg";
+import logo from "../../../images/slack.svg";
 
 const Logo = () => {
     return (
         <div className = {classes.Logo}>
             <img src={logo} alt=""/>
-            <span>SHAWARMA</span>
+            <span>PHONE</span>
         </div>
     );
 }

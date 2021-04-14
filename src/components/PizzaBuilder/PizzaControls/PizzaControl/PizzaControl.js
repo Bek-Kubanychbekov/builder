@@ -1,5 +1,4 @@
 import Button from "../../../UI/Button/Button";
-import PizzaIngredient from "../../PizzaIngredient/PizzaIngredient";
 import classes from "./PizzaControl.module.css";
 
 const PizzaControl = ({ type, add, remove, count }) => {

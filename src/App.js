@@ -1,14 +1,18 @@
-import Layout from "./components/Layout/Layout";
-import PizzaBuilder from "./components/PizzaBuilder/Animal";
-
-import "./App.css";
-
-const App = () => {
+import Layout from "./components/Layout/Layout" ;
+import Animal from "./components/Animal/Animal" ;
+import Checkout from "./components/Checkout/Checkout"
+import "./App.css" ;
+import { Redirect, Route, Switch } from "react-router";
+const App =() =>{
   return (
     <div className="App">
       <Layout>
-        <PizzaBuilder />
-      </Layout>
+        <Switch>
+    <Route path="/"component={Animal}exact/>
+    <Route path="/checkout"component={Checkout}/>
+    <Redirect to="/"/>
+    </Switch>
+    </Layout>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 import AnimalControls from "./AnimalControls/AnimalControls";
-import OrderSummary from "./OrderSummary/OrderSummary";
+import OrderSummary from "././OrderSammary/OrederSammary";
 import Modal from "../UI/Modal/Modal";
 import classes from "./Animal.module.css";
 import Button from"../UI/Button/Button"
@@ -27,7 +27,7 @@ useEffect(loadDefaults, []);
 
 function loadDefaults() {
   axios
-    .get('https://builder-e02c1-default-rtdb.firebaseio.com/default.json')
+    .get('https://builder-8df5b-default-rtdb.firebaseio.com/orders.json')
     .then(response => {
       setPrice(response.data.price);
 
@@ -62,7 +62,7 @@ function stopOrdering() {
 
 function finishOrdering() {
   axios
-    .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
+    .post('https://builder-8df5b-default-rtdb.firebaseio.com/orders.json', {
       ingredients: ingredients,
       price: price,
       address: "28.08.2004",

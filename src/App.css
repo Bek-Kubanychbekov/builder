@@ -3,6 +3,11 @@
   font-family: 'Lexend', sans-serif;
   box-sizing: border-box;
 }
-body {
+body{
+  font-family: 'Redressed', cursive;
   margin: 0;
+ background-color: beige;
+ width: 100%;height: 100%;
+ 
+
 }

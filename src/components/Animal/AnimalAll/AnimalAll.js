@@ -1,12 +1,12 @@
 import classes from "./AnimalAll.module.css";
 
 
-import dogBackground from "../../../imges/dog.svg";
-import cat from "../../../imges/cat.svg";
-import pigBackground from "../../../imges/pig.svg";
-import reccoon from "../../../imges/raccoon.svg";
-import mouse from"../../../imges/mouse.svg";
-import parrot from "../../../imges/parrot.svg"
+import dogBackground from "../../../images/logo.svg";
+import cat from "../../../images/cucumber.svg";
+import pigBackground from "../../../images/tomato.svg";
+import reccoon from "../../../images/ketchup.svg";
+import mouse from"../../../images/salad.svg";
+import parrot from "../../../images/salami.svg"
 
 
 

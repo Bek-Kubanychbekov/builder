@@ -1,4 +1,6 @@
+
 .Nav {
+  font-size: 1.4rem;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,7 +9,8 @@
 
 @media (max-width: 549px) {
   .Nav {
-    flex-direction: column;
+    z-index: 1;
+  flex-direction: column;
     margin-top: 1rem;
   }
 }

@@ -1,8 +1,8 @@
 import Button from "../../UI/Button/Button";
-import PizzaControl from "./PizzaControl/PizzaControl";
-import classes from "./PizzaControls.module.css";
+import AnimalControl from "./AnimalControl/AnimalControl";
+import classes from "./AnimalControls.module.css";
 
-const PizzaControls = ({
+const AnimalControls = ({
   ingredients,
   addIngredient,
   removeIngredient,
@@ -11,10 +11,10 @@ const PizzaControls = ({
   const results = [];
   let total = 0;
   for (const ingredient in ingredients) {
-    // Add ingredient number to totals number
+    
     total += ingredients[ingredient];
-    // Render pizza control for this ingredient
-    results.push(<PizzaControl
+  
+    results.push(<AnimalControl
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}
@@ -23,7 +23,7 @@ const PizzaControls = ({
   }
 
   return (
-    <div className={classes.PizzaControls}>
+    <div className={classes.AnimalControls}>
       <strong>Ingredients</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
@@ -31,4 +31,4 @@ const PizzaControls = ({
   );
 }
 
-export default PizzaControls;
+export default AnimalControls;

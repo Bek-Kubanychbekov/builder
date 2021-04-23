@@ -1,15 +1,13 @@
 .NavItem a {
-  display: block;
   color: white;
+  border-bottom: 5px solid transparent;
   text-decoration: none;
-  padding: 1.6rem 2rem 1.2rem;
-  border-bottom: 10px solid transparent;
-  transition: all .2s ease-in;
-  text-shadow: 0 0 1rem blue;
+  display: block;
+  padding: .5rem 1rem .35rem;
 }
 .NavItem a:hover {
   border-color: white;
-  background-color: rgb(109, 191, 211);
+  background-color: rgb(236, 47, 14);
 }
 .NavItem a:active,
 .NavItem a.active {
@@ -18,7 +16,7 @@
 
 @media (max-width: 549px) {
   .NavItem a {
-    border-bottom: none;
     border-right: 10px solid transparent;
+    border-bottom: none;
   }
 }

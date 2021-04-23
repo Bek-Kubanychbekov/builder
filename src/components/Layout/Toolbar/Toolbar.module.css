@@ -1,17 +1,18 @@
-.Toolbar{
+.Toolbar {
   display: flex;
   justify-content: space-between;
-  background-color:rgb(230, 224, 224);
-  font-size: 17px;
-  color: white;
-  font-family: 'Redressed', cursive; 
-  padding: 1px;
   position: sticky;
-  top:0;
-  left:0;
-  box-shadow: 0 0  15px rgb(48, 48, 255);
+  top: 0;
+  left: 0;
   z-index: 1;
+  padding: 0 1rem;
+
+  font-size: 2rem;
+  color: white;
+  background-color: tomato;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
+
 @media (max-width: 549px) {
   .Toolbar nav {
     display: none;

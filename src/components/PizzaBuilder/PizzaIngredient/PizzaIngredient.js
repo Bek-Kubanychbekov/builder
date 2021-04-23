@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./PizzaIngredient.module.css";
 import salamiBackground from "../../../images/salami.svg";
 import tomatoBackground from "../../../images/tomato.svg";
-import blackOliveBackground from "../../../images/blackOlive.svg";
+import blackOliveBackground from "../../../images/banana.svg";
 import greenOliveBackground from "../../../images/greenOlive.svg";
 import redPepperBackground from "../../../images/redPepper.svg";
 import yellowPepperBackground from "../../../images/yellowPepper.svg";

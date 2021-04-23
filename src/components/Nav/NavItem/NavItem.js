@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-dom";
 import classes from "./NavItem.module.css";
 const NavItem = ({ url, children, exact }) => {
   return (

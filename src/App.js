@@ -2,7 +2,7 @@ import Layout from "./components/Layout/Layout" ;
 import Animal from "./components/Animal/Animal" ;
 import Checkout from "./components/Checkout/Checkout"
 import "./App.css" ;
-import { Redirect, Route, Switch } from "react-router";
+import { Redirect, Route, Switch } from "react-dom";
 const App =() =>{
   return (
     <div className="App">

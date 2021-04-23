@@ -1,5 +1,7 @@
-.CheckoutSummary{
-  
+.CheckoutSummary {
     display: flex;
-    justify-content: center;
-}
+    flex-direction: column;
+    width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }

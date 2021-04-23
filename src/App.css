@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Train+One&display=swap');
-* {
-  font-family: 'Lexend', sans-serif;
-  box-sizing: border-box;
-}
 body{
-  font-family: 'Redressed', cursive;
+  font-family: cursive;
+  color: rgb(189, 189, 214);
   margin: 0;
- background-color: beige;
- width: 100%;height: 100%;
- 
-
+ background-size: auto;
 }

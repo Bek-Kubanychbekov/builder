@@ -1,19 +1,19 @@
 import classes from "./CheckoutSummary.module.css";
-import AnimalPreview from "../../Animal/AnimalPreview/AnimalPreview";
+import ToysPreview from "../../../components/Layout/Toys/ToysPreview/ToysPreview";
 import Button from "../../UI/Button/Button";
 
 const CheckoutSummary = ({ cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-      <AnimalPreview ingredients={{
-          dog: 80,
-          pig: 70,
-          mouse:60,
-          cat:20,
-          reccoon: 67,
-          parrot:45,
-        }} price={342} />
+        <ToysPreview ingredients={{
+          bear: 1, 
+          car: 1,
+          cat: 1,
+          ball:1,
+          beanbag: 1,
+          pyramid: 1,
+        }} price={1020} />
       </div>
       <div>
         <Button>Checkout</Button>

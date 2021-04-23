@@ -20,7 +20,6 @@
 
 @media (min-width: 550px) {
   .Drawer {
-    z-index: 1;
     display: none;
   }
 }

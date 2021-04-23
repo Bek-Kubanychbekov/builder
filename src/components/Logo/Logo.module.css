@@ -1,12 +1,15 @@
-.Logo {
+.Logo{
   display: flex;
   align-items: center;
-  font-family: 'Quicksand', sans-serif;
-  color: black;
-  font-weight: 800;
+  text-shadow: 0 0 1rem blue;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
 }
-.Logo img {
-    width: 8rem;
-  height: 6rem;
-  margin: .5rem;
+.Logo img{
+  border-radius: 25px;
+  width:70px;
+  height: 70px;
+  margin-right: .1rem;  
+  padding: .1rem; 
 }

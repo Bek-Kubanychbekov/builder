@@ -1,8 +1,10 @@
-.PizzaControls {
-    flex: 0 0 250px;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: tomato;
-    color: white;
-    text-align: center;
-  }
+.AnimalControls{
+  padding: 20px;
+  width: 230px;
+ height: 400px;
+  border-radius: 25px;
+text-align: center;
+
+  background-color: #dac384;
+  font-family: 'Quicksand', sans-serif;
+}

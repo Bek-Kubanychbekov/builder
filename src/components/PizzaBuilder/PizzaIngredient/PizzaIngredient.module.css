@@ -1,3 +1,23 @@
-.PizzaIngredient {
-    position: absolute;
+
+.PizzaIngredient{
+margin-top: 20px;
+-webkit-animation: pulsing 3s infinite;
+animation: pulsing 3s infinite;
+
+}
+
+
+  
+  @keyframes pulsing {
+    0% {  -webkit-transform:rotate(6deg);
+      transform:rotate(5deg) 
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.7, 0.7);
+      transform: scale(0.7, 0.7);
+    }
   }

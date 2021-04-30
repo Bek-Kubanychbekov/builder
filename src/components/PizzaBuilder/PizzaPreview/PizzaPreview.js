@@ -1,4 +1,6 @@
-import PizzaBuilder from "../PizzaBuilder";
+
+import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
+
 import classes from "./PizzaPreview.module.css";
 
 
@@ -6,7 +8,7 @@ const PizzaPreview = ({ ingredients,price }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<PizzaBuilder key={[ingredient + i]} type={[ingredient]} />)
+      result.push(<PizzaIngredient key={[ingredient + i]} type={[ingredient]} />)
     }
   }
 

@@ -1,3 +1,4 @@
+
 import Button from "../../UI/Button/Button";
 import PizzaControl from "./PizzaControl/PizzaControl";
 import classes from "./PizzaControls.module.css";
@@ -11,9 +12,9 @@ const PizzaControls = ({
   const results = [];
   let total = 0;
   for (const ingredient in ingredients) {
-    // Add ingredient number to totals number
+    
     total += ingredients[ingredient];
-    // Render pizza control for this ingredient
+  
     results.push(<PizzaControl
         key={ingredient}
         add={addIngredient}
@@ -23,7 +24,7 @@ const PizzaControls = ({
   }
 
   return (
-    <div className={classes.PizzaControls}>
+    <div className={classes.AnimalControls}>
       <strong>Ingredients</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>

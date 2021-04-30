@@ -1,5 +1,19 @@
-.PizzaBuilder {
+.Animal{
+  display: inline;
+ width: 100%;height: 100%;
+ 
+ justify-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ 
+ }
+ 
+ .Animal{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+ justify-content:space-evenly;
+ 
+ flex-wrap: wrap;
+ flex-direction: row;
+ 
+  margin: 0 auto;  
+ }

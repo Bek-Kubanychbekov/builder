@@ -1,6 +1,4 @@
-
 import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
-
 import classes from "./PizzaPreview.module.css";
 
 
@@ -13,7 +11,7 @@ const PizzaPreview = ({ ingredients,price }) => {
   }
 
   return (
-    <div className={classes.PizzaPreview}>
+    <div className={classes.AnimalPreview}>
       <div
         className={classes.color}>
           <div className={classes.name}> {[result]}</div>

@@ -1,15 +1,56 @@
+
+
 import Button from "../../../UI/Button/Button";
-import PizzaIngredient from "../../PizzaIngredient/PizzaIngredient";
 import classes from "./PizzaControl.module.css";
 
-const PizzaControl = ({ type, add, remove, count }) => {
+
+
+const PizzaControl = ({ type, add, remove }) => {
+ 
+  
+  
+  
+  const names = {
+    Dog: "Сhrysan ",
+    Pig: "Tulip",
+    Mouse:"Pion",
+    Cat:"Lilies",
+    Reccoon: "Aster",
+    Parrot:"Rose",
+   }
+   
+  
+   
   return (
-    <div className={classes.PizzaControl}>
-      <Button onClick={() => add(type)}>+</Button>
+    <div className={classes.AnimalControl}>
+  <Button
+        className={classes.plus}
+        onClick={() => {
+          remove(type);
+        
+        }}
+      >
+        -
+      </Button>
+
       <div className={classes.ingredient}>
-        <PizzaIngredient type={type} fixed />
+
+
+
+        {names[type]}
+        
       </div>
-      <Button onClick={() => remove(type)} disabled={!count}>-</Button>
+ 
+
+      <Button
+        className={classes.minus}
+        onClick={() => {
+          add(type);
+          
+        }}
+      >
+        +
+      </Button>
     </div>
   );
 }

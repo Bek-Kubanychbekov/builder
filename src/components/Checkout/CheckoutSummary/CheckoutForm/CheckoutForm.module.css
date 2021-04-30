@@ -1,0 +1,22 @@
+.ChacoutForm div{
+    padding: .3rem 1rem;
+}
+.ChacoutForm div > label{
+   font-size: 3.2rem;
+   margin-right: 1rem;
+   font-family: 'Quicksand', sans-serif;
+
+}
+.ChacoutForm div > label::after{
+  content: ":";
+ }
+ .ChacoutForm div > input{
+    font-size: 2.2rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding-left: 1rem;
+ }
+ .ChacoutForm div > input:focus {
+ outline: none;
+ border-color: gray;
+ }

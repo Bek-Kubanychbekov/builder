@@ -1,10 +1,11 @@
+
 .AnimalControls{
   padding: 20px;
   width: 230px;
- height: 400px;
+ height: 420px;
   border-radius: 25px;
 text-align: center;
-
-  background-color: #dac384;
+color: white;
+  background-color: #95ac13;
   font-family: 'Quicksand', sans-serif;
 }

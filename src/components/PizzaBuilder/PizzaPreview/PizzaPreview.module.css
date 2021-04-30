@@ -1,4 +1,4 @@
-.PizzaPreview {
+.AnimalPreview {
   flex: 0 0 410px;
   display: flex;
 justify-content:center ;
@@ -9,12 +9,11 @@ justify-content:center ;
 }
 
 .color{
-  border: solid black 0.1px;
   border-radius: 30px  ;
   padding:0 15px;
   width: 410px;
  min-height: 430px;
-  background-color: #dac384;
+  background-color: #95ac13;
   margin-bottom: 2rem;
 }
 .name{
@@ -26,12 +25,12 @@ justify-content:center ;
 }
 
 .price {
- background-color: #dac384;
+ background-color: #95ac13;
  margin: 0 auto;
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;
-  color: black;
+  color:white; 
   font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
   cursor: pointer;

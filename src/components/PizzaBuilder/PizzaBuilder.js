@@ -9,12 +9,12 @@ import axios from "axios";
 
 const PizzaBuilder = ({history}) => {
   const prices = {
-    Dog: 80,
-    Pig: 70,
-    Mouse:60,
-    Cat:20,
-    Reccoon: 67,
-    Parrot:45,
+    Сhrysan: 80,
+    Tulip: 70,
+    Pion:60,
+    Lilies:20,
+    Aster: 67,
+    Rose:45,
   };
   
 

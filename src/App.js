@@ -1,10 +1,9 @@
 import Layout from "./components/Layout/Layout";
 import PizzaBuilder from "./components/PizzaBuilder/PizzaBuilder";
 import Checkout from "./components/Checkout/Checkout";
-
 import "./App.css";
 import { Redirect, Route, Switch } from "react-router";
-
+import Orders from "./components/Orders/Orders";
 const App = () => {
   return (
     <div className="App">
@@ -12,6 +11,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={PizzaBuilder} exact />
           <Route path="/checkout" component={Checkout} />
+          <Route path="/orders" component={Orders} />
           <Redirect to="/" />
         </Switch>
       </Layout>

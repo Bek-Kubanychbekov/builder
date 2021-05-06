@@ -1,12 +1,13 @@
-import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
+
+import AnimalAll from "../PizzaIngredient/PizzaIngredient";
 import classes from "./PizzaPreview.module.css";
 
 
-const PizzaPreview = ({ ingredients,price }) => {
+const PizzaPreview = ({ animals,price }) => {
   const result = [];
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<PizzaIngredient key={[ingredient + i]} type={[ingredient]} />)
+  for (const animal in animals) {
+    for (let i = 0; i < animals[animal]; i++) {
+      result.push(<AnimalAll key={[animal + i]} type={[animal]} />)
     }
   }
 

@@ -1,4 +1,4 @@
-import AnimalPreview from "./PizzaPreview/PizzaPreview";
+import PizzaPreview from "./PizzaPreview/PizzaPreview";
 import PizzaControls from "./PizzaControls/PizzaControls";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
@@ -9,12 +9,12 @@ import axios from "axios";
 
 const PizzaBuilder = ({history}) => {
   const prices = {
-    Сhrysan: 80,
-    Tulip: 70,
-    Pion:60,
-    Lilies:20,
-    Aster: 67,
-    Rose:45,
+    Сhrysan: 250,
+    Tulip: 300,
+    Pion:440,
+    Lilies:500,
+    Aster: 700,
+    Rose:999,
   };
   
 
@@ -27,7 +27,7 @@ useEffect(loadDefaults, []);
 
 function loadDefaults() {
   axios
-    .get('https://builder-e02c1-default-rtdb.firebaseio.com/default.json')
+    .get('https://builder-8df5b-default-rtdb.firebaseio.com/default.json')
     .then(response => {
       setPrice(response.data.price);
 
@@ -62,7 +62,7 @@ function stopOrdering() {
 
 function finishOrdering() {
   axios
-    .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
+    .post('https://builder-8df5b-default-rtdb.firebaseio.com/orders.json', {
       ingredients: ingredients,
       price: price,
       address: "21.07.2003",
@@ -79,7 +79,7 @@ function finishOrdering() {
 return (
   <div className={classes.Animal}>
     <div className={classes.Aimall}>
-    <AnimalPreview
+    <PizzaPreview
       ingredients={ingredients}
       price={price} />
     <PizzaControls

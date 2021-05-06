@@ -11,12 +11,12 @@ const PizzaControl = ({ type, add, remove }) => {
   
   
   const names = {
-    Dog: "Сhrysan ",
-    Pig: "Tulip",
-    Mouse:"Pion",
-    Cat:"Lilies",
-    Reccoon: "Aster",
-    Parrot:"Rose",
+    Сhrysan: "Сhrysan ",
+    Tulip: "Tulip",
+    Pion:"Pion",
+    Lilies:"Lilies",
+    Aster: "Aster",
+    Rose:"Rose",
    }
    
   

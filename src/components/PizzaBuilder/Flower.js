@@ -8,7 +8,7 @@ import Button from"../UI/Button/Button"
 import withAxios from "../withAxios";
 import axios from "../../axios";
 import { useEffect, useState } from "react";
-import { useSelector,useDispatch } from "react-redux";
+
 import { load } from "../store/actions/Flower";
 const Flower = ({history}) => {
   const dispatch=useDispatch()

@@ -1,4 +1,3 @@
-  
 import FlowerPreview from "./FlowerPreview/FlowerPreview";
 import FlowerControls from "./FlowerControls/FlowerControls";
 import OrderSummary from "./OrderSummary/OrderSummary";

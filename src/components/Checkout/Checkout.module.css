@@ -1,3 +1,7 @@
-.Chackout{
-    margin: 10px auto;
+.Checkout{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center;
   }

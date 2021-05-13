@@ -3,3 +3,7 @@
     flex-direction: column;
     margin-bottom: 10px;    font-family: 'Quicksand', sans-serif;font-weight: 700;justify-content: center;
 }
+.Order .som {
+    color: red;
+    font-size: 25px;
+}

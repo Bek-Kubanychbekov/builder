@@ -1,4 +1,4 @@
-.AnimalPreview {
+.FlowerPreview {
   flex: 0 0 410px;
   display: flex;
 justify-content:center ;
@@ -40,7 +40,7 @@ justify-content:center ;
 a:focus {
   outline: none;
 }
-.ingredients{
+.flowers{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

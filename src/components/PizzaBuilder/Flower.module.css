@@ -1,0 +1,22 @@
+
+.Flower{
+   display: inline;
+   width: 100%;height: 100%;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   }
+   
+   .Flowers{
+   display: flex;
+   justify-content:space-evenly;
+   flex-wrap: wrap;
+   flex-direction: row;
+    margin: 0 auto;  
+   }
+
+
+
+
+
+

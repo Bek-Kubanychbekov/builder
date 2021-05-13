@@ -1,6 +1,6 @@
 
 import Layout from "./components/Layout/Layout" ;
-import PizzaBuilder from "./components/PizzaBuilder/PizzaBuilder" ;
+import PizzaBuilder from "./components/PizzaBuilder/Flower" ;
 import Checkout from "./components/Checkout/Checkout"
 import "./App.css" ;
 import { Redirect, Route, Switch } from "react-router";

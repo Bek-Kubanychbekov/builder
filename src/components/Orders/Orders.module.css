@@ -1,11 +1,29 @@
 .Orders{
-    background-color: #ff0707   ;
-    min-width: 100px;
+    background-color: #dac384;
+    min-width: 150px;
     text-align: center;
     padding: 10px 50px;
-    border-radius: 25px;
+    border-radius: 15px;
     border: solid 2px  black;
     font-size: 20px;
-
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
  min-height: 100px;
+}
+ul{
+    margin-top: 50px;
+}
+.Orders div{
+ position: fixed;
+ text-align: center;
+ padding: 10px;
+left: 0;
+bottom: 0;
+ background-color: rgb(37, 5, 73);
+ color: white;
+    width:100%;
+    font-size: 25px;
+    height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

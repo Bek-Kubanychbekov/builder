@@ -1,5 +1,5 @@
 import FlowerPreview from "./FlowerPreview/FlowerPreview";
-import FlowerControls from "./FlowerControls/FlowerControls";
+import FlowerControls from "./FlowersControls/FlowersControls";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
 import classes from "./Flower.module.css";

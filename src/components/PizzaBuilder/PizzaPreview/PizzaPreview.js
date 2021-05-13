@@ -13,12 +13,11 @@ const PizzaPreview = ({ animals,price }) => {
 
   return (
     <div className={classes.AnimalPreview}>
-      <div
-        className={classes.color}>
-          <div className={classes.name}> {[result]}</div>
-       
-      </div>
-      <div className={classes.price}>{price.toFixed(1)} som</div>
+    <div className={classes.color}>
+    <div className={classes.click}>
+    <div className={classes.name}> {[result]}</div>
+    </div></div>
+    <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
 }

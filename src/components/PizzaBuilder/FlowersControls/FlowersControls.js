@@ -9,10 +9,10 @@ const FlowerControls = ({
   const results = [];
   let total = 0;
   for (const flower in flowers) {
-  total += animals[animal];
+  total += flowers[flower];
   results.push(<FlowerControl
   key={flower}
-  count={flowers[animal]}
+  count={flowers[flower]}
   type={flower} />)
   }
 

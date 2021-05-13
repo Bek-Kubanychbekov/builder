@@ -26,11 +26,11 @@ const Flower=(state=initialState,action)=>{
     const newState={...state};
     switch (action.type) {
         case ADD_FLOWER:
-            newState.animals[action.flower]++; 
+            newState.flowers[action.flower]++; 
             newState.price+=prices[action.flower]
             break;
             case REMOVE_FLOWER:
-                newState.animals[action.flower]--; 
+                newState.flowers[action.flower]--; 
                 newState.price-=prices[action.flower]
                 break;
                 case SET_FLOWER:

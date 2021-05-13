@@ -6,8 +6,8 @@ import withAxios from "../withAxios";
 import classes from "./Checkout.module.css";
 
 const Checkout = ({ history }) => {
-  const animals = useSelector(state => state.Animal.animals);
-  const price = useSelector(state => state.Animal.price);
+  const flowers = useSelector(state => state.Flower.flowers);
+  const price = useSelector(state => state.Flower.price);
 
   function cancelCallback() {
     history.replace('/');
@@ -20,7 +20,7 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      animals: animals,
+      flowers: flowers,
       price: price,
     }).then(response => {
       history.replace('/');
@@ -31,7 +31,7 @@ const Checkout = ({ history }) => {
 
   return (
  <div className={classes.Checkout}>
-<FlowerPreview animals={animals} price={price} /> 
+<FlowerPreview flowers={flowers} price={price} /> 
 <CheckoutForm
  cancelCallback={cancelCallback}
  submitCallback={submitCallback} />

@@ -6,7 +6,7 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
   return (
     <div className={classes.CheckoutSummary}>
     
-      <FlowerPreview animals={{
+      <FlowerPreview flowers={{
         Сhrysan: 1,
         Tulip: 1,
         Pion:1,

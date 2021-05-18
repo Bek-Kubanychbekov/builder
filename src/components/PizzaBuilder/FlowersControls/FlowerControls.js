@@ -1,5 +1,5 @@
 import Button from "../../UI/Button/Button";
-import FlowerControl from "./FlowerControl/FlowerControl";
+import FlowerControl from "./FlowerControl/FlowerControl"
 import classes from "./FlowerControls.module.css";
 
 const FlowerControls = ({

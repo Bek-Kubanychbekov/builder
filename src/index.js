@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import {createStore,applyMiddleware,combineReducers} from 'redux';
+import thunk from "redux-thunk";
 import App from './App';
-
 import reportWebVitals from './reportWebVitals';
+import Flower from './components/store/reducers/Flower';
+import orders from './components/store/reducers/orders';
+
+ const rootReduser = combineReducers({Flower,orders});
+ const store = createStore(rootReduser,applyMiddleware(thunk));
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
+   <Provider store={store}>
+      <BrowserRouter>
+    <App />
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

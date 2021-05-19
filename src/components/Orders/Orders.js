@@ -14,7 +14,7 @@ const Orders = () => {
 
   return (
     <div className={classes.Orders}>
-      {results}<div> ⚡  Bek the Builder  ⚡ </div>
+      {results}<div>  </div>
     </div>
   );
 }

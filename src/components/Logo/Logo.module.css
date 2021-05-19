@@ -1,8 +1,19 @@
-.Logo {
+.Logo{
   display: flex;
   align-items: center;
+  text-shadow: 0 0 1rem blue;
+  font-size: 28px;
+  color: blue;
+  text-shadow: 0 0 5px rgb(0, 217, 255);
+  font-weight: bold;
+
+  
 }
-.Logo img {
-  height: 3rem;
-  margin: .5rem;
+
+.Logo img{
+  border-radius: 25px;
+  width:70px;
+  height: 70px;
+  margin-right: .1rem;  
+  padding: .1rem; 
 }

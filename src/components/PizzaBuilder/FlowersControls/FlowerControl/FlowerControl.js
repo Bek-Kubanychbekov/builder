@@ -1,21 +1,20 @@
 import { useDispatch } from "react-redux";
-import { add, remove } from "../../../store/actions/Flower";
+import { add, remove } from "../../../store/actions/flowers";
 import Button from "../../../UI/Button/Button";
 import classes from "./FlowerControl.module.css";
 
 const FlowerControl = ({ type, count }) => {
 const dispatch=useDispatch();
 const names = {
-  Dog: "  Dog  ",
-  Cat:"Cat",
-  Reccoon: "Reccoon",
-  Chameleon: "Chameleon",
-  Hamster:"Hamster",
-  Turtle:"Turtle",
-   }
+dog: "  Dog  ",
+cat:"Cat",
+reccoon: "Reccoon",
+chameleon: "Chameleon",
+hamster:"Hamster",
+turtle:"Turtle",
+}
    
-  
-   return (
+  return (
     <div className={classes.FlowerControl}>
     <Button onClick={() => dispatch(add(type))}>+</Button>
     {names[type]}

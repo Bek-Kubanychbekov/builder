@@ -1,51 +1,63 @@
 .FlowerPreview {
-  flex: 0 0 410px;
+  flex: 0 0 400px;
   display: flex;
-  justify-content:center ;
-  flex-wrap: wrap-reverse;
-  margin-bottom: 1.5rem;
-  flex-direction: column;
-  }
-  
-  .color{
-  border: solid black 0.1px;
-  border-radius: 30px  ;
-  padding:0 20px;
-  width: 410px;
-  min-height: 430px;
-  background-color: #dac384;
-  margin-bottom: 2rem;
-  }
-  
-  .name{
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 30px;
-  }
-  
-  .price {
-  background-color: #dac384;
-  margin: 0 auto;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  font-size: 1.5rem;
-  color: black;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: bold;
+  justify-content: center;
+margin: 0 20px;
+}
+.name{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.color{
+  width: 460px;
+  min-height: 400px;
+  background-color:   #ff0707;
+  ;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #ff0707;
+  border-radius: 2rem  ;
+  padding: 20px;
+}
+
+.price {
+  box-shadow: 0 0 10px #ff0707;
+ background-color:  #ff0707;
+ ;
+  border-radius: 2.5rem;
+  padding: 0 4rem;
   cursor: pointer;
-  width: 150px;
-  text-align: center;
-  }
-  
-  a:focus {
+  color:white;
+  text-shadow: 0 0 5px rgb(219, 142, 155);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+a:focus {
   outline: none;
+}
+@media (max-width:600px){
+  .color{
+    width: 280px;
+    min-height: 280px;
+    background-color: #ff0707;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px #ff0707;
+    border-radius: 2rem  ;
+    padding: 20px;
+   
   }
-  
-  .ingredients{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  .price {
+    box-shadow: 0 0 10px #ff0707;
+   background-color: #ff0707;
+    border-radius: 2.5rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 5px rgb(0, 217, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
   }
-  
+}

@@ -7,13 +7,13 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
     <div className={classes.CheckoutSummary}>
     
       <FlowerPreview flowers={{
-           dog: 1,
-           chameleon: 1,
-           turtle:1,
-           Cat:1,
-           reccoon: 1,
-           hamster:1,
-      }} price={342} />
+           rose : 1,
+           lily : 1,
+           tulip :1,
+           orchid :1,
+           carnation : 1,
+           hyacinth :1,
+      }} price={500} />
       
      <ChacoutForm
       submitCallback={submitCallback}

@@ -11,7 +11,7 @@
   height: 3px;
   width: 2rem;
   background-color: rgb(236, 253, 0);
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+  box-shadow: 0 0 20px black;
 }
 .DrawerOpen > div:not(:last-child) {
   margin-bottom: .5rem;

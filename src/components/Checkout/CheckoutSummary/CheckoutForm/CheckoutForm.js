@@ -16,8 +16,8 @@ const CheckoutForm = ({submitCallback, cancelCallback }) => {
         <input type="text" id="address" name="address" required placeholder="EX: № 31 ctrit Bapa"></input>
         </div>
         
-        <Button >Checkout</Button>
-        <Button onClick={cancelCallback}>Cancel</Button>
+        <Button>Checkout</Button>
+        <Button  onClick={cancelCallback}>Cancel</Button>
     </form>
 
  );

@@ -13,23 +13,22 @@ margin: 0 20px;
 .color{
   width: 460px;
   min-height: 400px;
-  background-color:   #ff0707;
-  ;
+  background-color:   #ff0707;;
   margin-bottom: 1rem;
   box-shadow: 0 0 10px #ff0707;
   border-radius: 2rem  ;
   padding: 20px;
+ 
 }
 
 .price {
   box-shadow: 0 0 10px #ff0707;
- background-color:  #ff0707;
- ;
+ background-color:  #ff0707;;
   border-radius: 2.5rem;
   padding: 0 4rem;
   cursor: pointer;
-  color:white;
-  text-shadow: 0 0 5px rgb(219, 142, 155);
+  color:rgb(236, 253, 0);
+  text-shadow: 0 0 20px black;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -39,8 +38,8 @@ a:focus {
 }
 @media (max-width:600px){
   .color{
-    width: 280px;
-    min-height: 280px;
+    width: 400px;
+    min-height: 300px;
     background-color: #ff0707;
     margin-bottom: 1rem;
     box-shadow: 0 0 10px #ff0707;
@@ -54,8 +53,8 @@ a:focus {
     border-radius: 2.5rem;
     padding: 0 2rem;
     cursor: pointer;
-    color: white;
-    text-shadow: 0 0 5px rgb(0, 217, 255);
+    color: rgb(236, 253, 0);
+    text-shadow: 0 0 20px black;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;

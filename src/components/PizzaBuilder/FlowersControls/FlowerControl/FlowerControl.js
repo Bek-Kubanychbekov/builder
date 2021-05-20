@@ -6,7 +6,7 @@ import classes from "./FlowerControl.module.css";
 const FlowerControl = ({ type, count }) => {
 const dispatch=useDispatch();
 const names = {
-dog: "  Dog  ",
+dog: "Dog",
 cat:"Cat",
 reccoon: "Reccoon",
 chameleon: "Chameleon",

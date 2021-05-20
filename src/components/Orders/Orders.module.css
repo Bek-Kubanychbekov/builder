@@ -10,8 +10,8 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
  min-height: 100px; 
- color: white;
- text-shadow: 0 0 5px rgb(219, 142, 155);
+ color: rgb(236, 253, 0);
+ text-shadow: 0 0 20px black;
 }
 ul{
     margin-top: 50px;
@@ -23,7 +23,7 @@ ul{
 left: 0;
 bottom: 0;
 
- color: white;
+ color: rgb(236, 253, 0);
     width:100%;
     font-size: 25px;
     height: 20px;

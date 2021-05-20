@@ -1,4 +1,4 @@
-import ChackoutForm from "./CheckoutForm/CheckoutForm";
+import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import FlowerPreview from "../../PizzaBuilder/FlowerPreview/FlowerPreview";
 import classes from "./CheckoutSummary.module.css";
 
@@ -15,7 +15,7 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
         hyacinth : 1,
       }} price={1000} />
       
-     <ChackoutForm
+     <CheckoutForm
       submitCallback={submitCallback}
       cancelCallback={cancelCallback}/>
     </div>

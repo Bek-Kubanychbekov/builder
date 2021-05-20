@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     text-align: center;
     color: rgb(236, 253, 0);
-    background-color: #c91717; 
+    background-color: #c21818; 
     }
     .div{
     text-align: center;  
@@ -37,10 +37,4 @@
     list-style: none; 
     }
     
-    li{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    
-    strong{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+ 

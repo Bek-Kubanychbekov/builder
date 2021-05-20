@@ -18,7 +18,7 @@ const FlowerControls = ({
 
   return (
   <div className={classes.FlowerControls}>
-  <strong >Flowers</strong>
+  <strong >Bouquets</strong>
   {results}
   <Button disabled={!total} onClick={startOrdering}>Order</Button>
   </div>

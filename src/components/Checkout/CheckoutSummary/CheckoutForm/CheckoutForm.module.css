@@ -13,7 +13,7 @@
    
    .CheckoutForm div > label::after{
    content: ":";
-  
+  font-weight: bold;
     }
    
     .CheckoutForm div > input{

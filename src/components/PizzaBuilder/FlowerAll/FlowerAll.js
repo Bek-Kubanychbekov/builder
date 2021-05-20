@@ -1,10 +1,10 @@
 import classes from "./FlowerAll.module.css";
-import rose from "../../../images/flower-bouquet.svg";
-import lily from "../../../images/bouquet.svg";
-import tulip from "../../../images/bouquet.svg";
-import orchid from "../../../images/bouquet.svg";
-import carnation from"../../../images/bouquet.svg";
-import hyacinth from "../../../images/bouquet.svg";
+import rose from "../../../images/rose.svg";
+import lily from "../../../images/flower.svg";
+import tulip from "../../../images/tulip.svg";
+import orchid from "../../../images/orhidea.svg";
+import carnation from"../../../images/bouquete3.svg";
+import hyacinth from "../../../images/asdf.svg";
 
 const FlowerAll = ({ type ,fixed }) => {
   const types = {
@@ -12,8 +12,8 @@ const FlowerAll = ({ type ,fixed }) => {
   lily : { backgroundImage: `url(${lily})`, width: "60px", height: "60px" },
   tulip : { backgroundImage: `url(${tulip})`, width: "60px", height: "60px",},
   orchid : { backgroundImage: `url(${orchid})`, width: "60px", height: "60px"  },
-  carnation :{ backgroundImage: `url(${carnation})`, width: "90px", height: "90px"  },
-  hyacinth :{ backgroundImage: `url(${hyacinth})`, width: "70px", height: "70px"  },
+  carnation :{ backgroundImage: `url(${carnation})`, width: "60px", height: "60px"  },
+  hyacinth :{ backgroundImage: `url(${hyacinth})`, width: "60px", height: "60px"  },
   }
  
   return (

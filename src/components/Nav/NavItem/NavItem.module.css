@@ -1,9 +1,11 @@
 .NavItem a {
-  color: rgb(88, 33, 33);
+  color: rgb(255, 255, 255);
   border-bottom: 5px solid transparent;
   text-decoration: none;
   display: block;
   padding: 1rem ;
+  text-shadow: 0 0 1rem blue;
+  font-weight: bold;
 }
 .NavItem a:hover {
   border-color: rgb(255, 255, 255);

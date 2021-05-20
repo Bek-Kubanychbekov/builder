@@ -4,10 +4,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-        
+    color: white;
+    background-color: #c91717; 
     }
     .div{
     text-align: center;  
+
     }
     
     .button1{

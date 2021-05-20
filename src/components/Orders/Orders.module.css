@@ -1,15 +1,17 @@
 .Orders{
-background-color: #dac384;
+background-color: #ff0000;
 min-width: 150px;
 text-align: center;
 padding: 10px 50px;
 border-radius: 15px;
-border: solid 2px  black;
+box-shadow: 0 0 10px rgb(255, 38, 0);
 font-size: 20px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
  min-height: 100px; 
+ color: white;
+ text-shadow: 0 0 5px rgb(219, 142, 155);
 }
 ul{
     margin-top: 50px;
@@ -25,5 +27,5 @@ bottom: 0;
     width:100%;
     font-size: 25px;
     height: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }

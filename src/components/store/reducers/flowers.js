@@ -2,27 +2,27 @@ import { REMOVE_FLOWER,ADD_FLOWER, SET_FLOWER } from "../actions/types";
 
 const initialState ={
     flowers:{
-        Dog: 1,
-        Cat:1,
-        Turtle:1,
-        Reccoon: 1,
-        Hamster:1, 
-        Chameleon: 1,
+        rose : 1,
+        lily :1,
+        tulip :1,
+        orchid : 1,
+        carnation :1, 
+        hyacinth : 1,
     },
-    price:342,
+    price:1000,
 };
 
 const prices = {
-    Dog: 80,
-    Cat:20,
-    Turtle:60,
-    Reccoon: 67,
-    Hamster:45,  
-    Chameleon: 70,
+    rose : 100,
+    lily :200,
+    tulip :150,
+    orchid : 130,
+    carnation :250,  
+    hyacinth : 170,
   };
   
 
-const Flower=(state=initialState,action)=>{
+const flowers=(state=initialState,action)=>{
     const newState={...state};
     switch (action.type) {
         case ADD_FLOWER:
@@ -40,4 +40,4 @@ const Flower=(state=initialState,action)=>{
     }
         return newState ;
     }
-   export default Flower;
+   export default flowers;

@@ -1,12 +1,12 @@
 import classes from "./OrderSummary.module.css";
 const OrderSummary = ({ flowers, price,}) => {
   const Flower = {
-  dog: "  Dog  ",
-  cat:"Cat",
-  reccoon: "Reccoon",
-  chameleon: "Chameleon",
-  hamster:"Hamster",
-  turtle:"Turtle",
+    rose : "Rose ",
+    lily :"Lily ",
+    tulip : "Tulip ",
+    orchid : "Orchid ",
+    carnation :"Carnation ",
+    hyacinth :"Hyacinth ",
    
   }
   const results = Object.keys(flowers)

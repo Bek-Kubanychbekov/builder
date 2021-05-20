@@ -1,6 +1,6 @@
 .FlowerControl{
 
-    display: flex;
+    display: wrap;
     justify-content: center;
     align-items: center;
     margin: .5rem 0;
@@ -11,7 +11,7 @@
   }
   @media (max-width:600px){
     .FlowerControl{
-      display: flex;
+      display: wrap;
       justify-content: center;
       align-items: center;
       margin: .5rem 0;

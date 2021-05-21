@@ -5,12 +5,12 @@
   justify-content: center;
 margin: 0 20px;
 }
-.name{
+.preview{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.color{
+.colors{
   width: 400px;
   min-height: 400px;
   background-color:   #ff0707;;
@@ -37,7 +37,7 @@ a:focus {
   outline: none;
 }
 @media (max-width:600px){
-  .color{
+  .colors{
     width: 400px;
     min-height: 300px;
     background-color: #ff0707;

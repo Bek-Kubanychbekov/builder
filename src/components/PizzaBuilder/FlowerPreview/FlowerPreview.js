@@ -10,9 +10,9 @@ const FlowerPreview = ({ flowers,price }) => {
 
   return (
     <div className={classes.FlowerPreview}>
-    <div className={classes.color}>
+    <div className={classes.colors}>
     
-    <div className={classes.name}> {[result]}</div>
+    <div className={classes.preview}> {[result]}</div>
     </div>
     <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>

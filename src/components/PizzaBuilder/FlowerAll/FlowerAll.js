@@ -1,9 +1,9 @@
 import classes from "./FlowerAll.module.css";
 import rose from "../../../images/rose.svg";
 import lily from "../../../images/flower.svg";
-import tulip from "../../../images/tulip.svg";
+import tulip from "../../../images/tuilip.svg";
 import orchid from "../../../images/orhidea.svg";
-import carnation from"../../../images/bouquete3.svg";
+import carnation from"../../../images/bouquet.svg";
 import hyacinth from "../../../images/asdf.svg";
 
 const FlowerAll = ({ type ,fixed }) => {

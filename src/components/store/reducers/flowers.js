@@ -2,12 +2,12 @@ import { REMOVE_FLOWER,ADD_FLOWER, SET_FLOWER } from "../actions/types";
 
 const initialState ={
     flowers:{
-        rose : 1,
+        carnation : 1,
+        hyacinth :1,
         lily :1,
-        tulip :1,
         orchid : 1,
-        carnation :1, 
-        hyacinth : 1,
+        rose :1, 
+        tulip : 1,
     },
     price:1000,
 };

@@ -5,15 +5,15 @@
     }
     
     @keyframes pulsing {
-      0%{  -webkit-transform: scale(0.7, 0.7);
-        transform: scale(0.7, 0.7);
+      0%{   -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
       }
       50% {
-        -webkit-transform: scale(1.0, 1.0);
-        transform: scale(1.0, 1.0);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
       }
       100% {
-        -webkit-transform: scale(0.7, 0.7);
-        transform: scale(0.7, 0.7);
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
       }
     }

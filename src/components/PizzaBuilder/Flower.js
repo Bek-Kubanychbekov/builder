@@ -11,6 +11,7 @@ import { useSelector,useDispatch } from "react-redux";
 import { load } from "../store/actions/flowers";
 const Flower = ({history}) => {
   const dispatch=useDispatch()
+  const isAuthenticated = useSelector(state => state.auth.token !== null)
 const flowers=useSelector(state=>state.Flower.flowers);
 const price =useSelector(state=>state.Flower.price);
 const [ordering, setOrdering] = useState(false);
@@ -19,6 +20,11 @@ useEffect(()=>dispatch(load()),[dispatch])
 
 
 function startOrdering() {
+  if (isAuthenticated){
+  }
+else {
+  history.push ("./auth")
+}
   setOrdering(true);
 }
 function stopOrdering() {

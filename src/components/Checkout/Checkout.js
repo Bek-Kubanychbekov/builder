@@ -6,6 +6,7 @@ import withAxios from "../withAxios";
 import classes from "./Checkout.module.css";
 
 const Checkout = ({ history }) => {
+  const {token, id } =useSelector(state => state.auth);
   const flowers = useSelector(state => state.Flower.flowers);
   const price = useSelector(state => state.Flower.price);
 
@@ -16,12 +17,13 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('/orders.json', {
+    axios.post('/orders.json?auth=' + token, {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
       flowers: flowers,
       price: price,
+      userId:id
     }).then(response => {
       history.replace('/');
     });

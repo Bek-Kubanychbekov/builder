@@ -12,8 +12,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Flower from './components/store/reducers/flowers';
 import orders from './components/store/reducers/orders';
+import auth from './components/store/reducers/auth'
 
-const rootReducer = combineReducers({ Flower, orders });
+const rootReducer = combineReducers({ Flower, orders, auth });
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(

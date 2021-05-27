@@ -1,4 +1,3 @@
-
 import classes from "./Auth.module.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -19,11 +18,12 @@ const Auth = () => {
 
     dispatch(auth(method, data.get('email'), data.get('password')));
   }
-  
+
   let errorOutput = null;
   if (error) {
-    errorOutput = <h4 id ="authcolor" style={{ color:"yellow" }}>{error}</h4>;
-}
+    errorOutput = <h4 className={classes.qwerty} style={{ color: "yellow" }}>{error}</h4>;
+  }
+
   let redirectOutput = null;
   if (token) {
     redirectOutput = <Redirect to="/" />
@@ -31,21 +31,18 @@ const Auth = () => {
 
   return (
     <div className={classes.Auth}>
-      <h1>Welcome</h1>
+      <h1 className={classes.teksturasanimatsue}>Welcome</h1>
       {errorOutput}
-      <form onSubmit={submitCallback} className={classes.input}>
-        <div className={classes.heloo}>
+      <form onSubmit={submitCallback}>
         <input type="email" name="email" placeholder="Email" required />
-        <input type="password" name="password" placeholder="Password" required /></div>
-     
-
-        <div className={classes.color}>
-        <button onClick={() => setMethod("signin")} disabled={loading}>sign in</button>
-        <button onClick={() => setMethod("signup")} disabled={loading}>sign up</button>
-      </div></form>
+        <br />
+        <input type="password" name="password" placeholder="Password" required />
+        <br />
+        <button className={classes.AuthButton} onClick={() => setMethod("signin")} disabled={loading}>Sign in</button>
+        <button className={classes.AuthButton} onClick={() => setMethod("signup")} disabled={loading}>Sign up</button>
+      </form>
       {redirectOutput}
     </div>
   );
 }
- 
 export default Auth;

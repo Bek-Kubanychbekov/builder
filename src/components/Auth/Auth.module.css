@@ -1,52 +1,45 @@
-.Auth{
+.Auth {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #ff0707;
-   min-width: 120px;
+   min-width: 150px;
    min-height: 120px;
-    padding: 10px;
-    margin-top: 2rem;
-border-radius: 25px;
-box-shadow: 0 0 20px black;
-
-}
-
- .input{
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-
-input{margin-top: 10px;
-height: 20px;
-border-radius: 5px;
-padding: 10px 10px;
-margin-right: 10px;}
-
-.color button{
-    text-align: center;
-    margin-right: 10px;
-    margin-top: 10px;
-    padding: 10px 15px;
-    width: 100px;
-    border: none;
-font-size: 35px;
+    padding: 20px;
 border-radius: 35px;
-   background-color: rgb(13, 194, 13);color: yellow;
-    font-size: 1rem;
+  box-shadow: 0 0 20px black; 
+  margin-top: 2rem;
+  
+  }
+  .Auth input {
+    width: 17rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ff0707;
+    font-size: 1.3rem;
+    outline: none;
+  }
+  .teksturasanimatsue {
+    font-size: 43px;
+    color: yellow;
+     text-shadow: 0 0 20px black; 
+   
+  }
+  
+  .AuthButton {
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 8px;
+    padding: 9px 24px;
+    position: relative;
+    background-color: rgb(0, 179, 0);
+  box-shadow: 0 0 20px black;
+  border: solid rgb(0, 179, 0);
+    color: yellow;
+    border-radius: 10px;
+  }
+.qwerty{
+    text-shadow:0 0 20px black;
 }
-.Auth h1{
-    margin-top: 12px;
-    -webkit-animation: pulsing 3s infinite;
-    animation: pulsing 3s infinite;
-    color: rgb(236, 253, 0);
-    text-shadow:0 0 20px black ;
-}
-.authcolor{
-    text-shadow: 0 0 10PX black;
-}  
-    

@@ -4,17 +4,16 @@
     justify-content: center;
     text-align: center;
     background-color: #ff0707;
-   min-width: 150px;
+   min-width: 120px;
    min-height: 120px;
-    padding: 20px;
+    padding: 10px;
     margin-top: 2rem;
-border-radius: 15px;
+border-radius: 25px;
 box-shadow: 0 0 20px black;
 
 }
 
  .input{
-    margin-right: 15px;
     display: flex;
    flex-direction: column;
    justify-content: center;
@@ -29,6 +28,7 @@ padding: 10px 10px;
 margin-right: 10px;}
 
 .color button{
+    text-align: center;
     margin-right: 10px;
     margin-top: 10px;
     padding: 10px 15px;

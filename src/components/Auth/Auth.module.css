@@ -35,8 +35,7 @@ margin-right: 10px;}
     width: 100px;
     border: none;
 font-size: 35px;
-    border-radius: 35px;
-    font-family: 'Bebas Neue', cursive;
+border-radius: 35px;
    background-color: rgb(13, 194, 13);color: yellow;
     font-size: 1rem;
 }
@@ -47,5 +46,7 @@ font-size: 35px;
     color: rgb(236, 253, 0);
     text-shadow:0 0 20px black ;
 }
-    
+.authcolor{
+    text-shadow: 0 0 10PX black;
+}  
     

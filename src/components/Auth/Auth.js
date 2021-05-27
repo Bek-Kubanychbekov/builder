@@ -19,12 +19,11 @@ const Auth = () => {
 
     dispatch(auth(method, data.get('email'), data.get('password')));
   }
-
+  
   let errorOutput = null;
   if (error) {
-    errorOutput = <h4 style={{ color: "red" }}>{error}</h4>;
-  }
-
+    errorOutput = <h4 id ="authcolor" style={{ color:"yellow" }}>{error}</h4>;
+}
   let redirectOutput = null;
   if (token) {
     redirectOutput = <Redirect to="/" />

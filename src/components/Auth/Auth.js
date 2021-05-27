@@ -20,7 +20,8 @@ const Auth = () => {
 
   let errorOutput = null;
   if (error) {
-    errorOutput = <h4 style={{ color: "red" }}>{error}</h4>;
+    errorOutput = <h4 style={{ color:"yellow" }}>{error}</h4>;
+
   }
 
   let redirectOutput = null;
